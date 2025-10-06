@@ -7,15 +7,22 @@ import Link from "next/link";
 import CardMedia from '@mui/material/CardMedia';
 
 const HeroSection = () => {
-  const [result, setResult] = useState(null)
+  const [data, setData] = useState(null)
 
   useEffect(() => {
-    fetch('/api/hero')
-      .then((res) => res.json())
-      .then((data) => {
-        setResult(data)
-      })
-  }, [result])
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/api/hero');
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
 
 
   return (
