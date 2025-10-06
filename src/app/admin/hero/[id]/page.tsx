@@ -82,7 +82,6 @@ const Hero = () => {
        <input
         name="title0"
         type="text"
-        required
         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
         onChange={(e) => setTitle0(e.target.value)}
         value={title0}
@@ -98,7 +97,6 @@ const Hero = () => {
        <input
         name="title1"
         type="text"
-        required
         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
         onChange={(e) => setTitle1(e.target.value)}
         value={title1}
@@ -114,7 +112,6 @@ const Hero = () => {
        <input
         name="title2"
         type="text"
-        required
         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
         onChange={(e) => setTitle2(e.target.value)}
         value={title2}
@@ -130,7 +127,6 @@ const Hero = () => {
        <input
         name="cv"
         type="text"
-        required
         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
         onChange={(e) => setCv(e.target.value)}
         value={cv}

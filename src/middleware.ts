@@ -45,5 +45,5 @@ export async function middleware(request) {
 // };
 
 export const config = {
- matcher: ['/admin/:path*', '/api/admin/:path*'], // Apply middleware to specific routes
+ matcher: ['/admin/:path*'], // Apply middleware to specific routes
 };
