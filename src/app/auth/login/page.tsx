@@ -31,8 +31,6 @@ const Login = () => {
    console.log("Login failed", error.message);
    alert("Login failed")
   }
-
-  alert("Ingresando...")
   return;
  }
 
