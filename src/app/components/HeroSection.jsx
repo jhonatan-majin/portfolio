@@ -15,7 +15,7 @@ const HeroSection = () => {
       .then((data) => {
         setResult(data)
       })
-  }, [])
+  }, [result])
 
 
   return (
