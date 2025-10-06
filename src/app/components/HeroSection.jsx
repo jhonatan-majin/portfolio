@@ -27,7 +27,7 @@ const HeroSection = () => {
 
   return (
     <section className="lg:py-16">
-      {result?.map((r) => (
+      {data?.map((r) => (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-12">
             <motion.div
