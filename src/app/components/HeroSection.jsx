@@ -12,7 +12,7 @@ const HeroSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/hero');
+        const response = await fetch('/api/admin/hero');
         const result = await response.json();
         setData(result);
       } catch (error) {
